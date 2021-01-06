@@ -1,0 +1,348 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Core_i3
+ */
+public class SOS
+
+{
+
+  public static void main(String[] args)
+
+ {
+
+    Scanner input = new Scanner(System.in);
+
+    String ar[][] = {{"-","-","-"}, {"-","-","-"}, {"-","-","-"}};
+
+    int player1 = 0;
+
+    int player2 = 0;
+
+    int i;
+
+     
+
+    for(int l = 0; l<3; l++)
+
+    {
+      for(int j = 0; j<3; j++)
+
+      {
+
+        System.out.print(ar[l][j]);
+
+      }
+
+      System.out.print("\n");
+
+    }
+
+     
+
+    for(i = 0;i<9;i++)
+
+    {
+
+      int row = 0;
+
+      int col = 0;
+
+            
+
+      System.out.println("Enter the row number: ");
+
+      row = input.nextInt();
+
+      System.out.println("Enter the column number: ");
+
+      col = input.nextInt();
+
+      input.nextLine();
+
+      System.out.println("Enter (S or O): ");
+
+      ar[row][col] = input.nextLine();
+
+       
+
+      for(int k = 0; k<3; k++)
+
+      {
+
+        for(int j = 0; j<3; j++)
+
+        {
+
+          System.out.print(ar[k][j]);
+
+        }
+
+        System.out.print("\n");
+
+      }
+
+      if(ar[0][0].equalsIgnoreCase("S") && ar[0][1].equalsIgnoreCase("O") && ar[0][2].equalsIgnoreCase("S"))
+
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player2+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else if(ar[1][0].equalsIgnoreCase("S") && ar[1][1].equalsIgnoreCase("O") && ar[1][2].equalsIgnoreCase("S"))
+
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else if(ar[2][0].equalsIgnoreCase("S") && ar[2][1].equalsIgnoreCase("O") && ar[2][2].equalsIgnoreCase("S"))
+
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else
+
+        {
+
+           System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+        }
+
+   }
+
+}
+
+}
+/import java.util.Scanner;/
+
+ 
+
+class SOSNGTest
+
+{
+
+  public static void main(String[] args)
+
+  {
+
+    Scanner input = new Scanner(System.in);
+
+    String ar[][] = {{"-","-","-"}, {"-","-","-"}, {"-","-","-"}};
+
+    int player1 = 0;
+
+    int player2 = 0;
+
+    int i;
+
+     
+
+    for(int l = 0; l<3; l++)
+
+    {
+
+      for(int j = 0; j<3; j++)
+
+      {
+
+        System.out.print(ar[l][j]);
+
+      }
+
+      System.out.print("\n");
+
+    }
+
+     
+
+    for(i = 0;i<9;i++)
+
+    {
+
+      int row = 0;
+
+      int col = 0;
+
+            
+
+      System.out.println("Enter the row number: ");
+
+      row = input.nextInt();
+
+      System.out.println("Enter the column number: ");
+
+      col = input.nextInt();
+
+      input.nextLine();
+
+      System.out.println("Enter (S or O): ");
+
+      ar[row][col] = input.nextLine();
+
+       
+
+      for(int k = 0; k<3; k++)
+
+      {
+
+        for(int j = 0; j<3; j++)
+
+        {
+
+          System.out.print(ar[k][j]);
+
+        }
+
+        System.out.print("\n");
+
+      }
+
+      if(ar[0][0].equalsIgnoreCase("S") && ar[0][1].equalsIgnoreCase("O") && ar[0][2].equalsIgnoreCase("S"))
+
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player2+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else if(ar[1][0].equalsIgnoreCase("S") && ar[1][1].equalsIgnoreCase("O") && ar[1][2].equalsIgnoreCase("S"))
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else if(ar[2][0].equalsIgnoreCase("S") && ar[2][1].equalsIgnoreCase("O") && ar[2][2].equalsIgnoreCase("S"))
+
+        {
+
+          if(i % 2 == 0)
+
+          {
+
+            player1++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+          else
+
+          {
+
+            player2++;
+
+            System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+          }
+
+        }
+
+        else
+
+        {
+
+           System.out.println("Player 1: "+player1+"     Player 2: "+player2);
+
+        }
+   }
+
+}
+}
